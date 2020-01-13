@@ -41,7 +41,7 @@ function checkForDOM() {
 requestAnimationFrame(checkForDOM);
 
 function scrapeData() {
-  let responseContainingEle = document.getElementById("houseItems");
+  let responseContainingEle = document.querySelector("div[id=ldp-address]");
   if(responseContainingEle) {
     let response = JSON.parse(responseContainingEle.innerHTML);
   } else {
